@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAF27DC215C809260026275B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF27DC115C809260026275B /* UIKit.framework */; };
+		DAF27DC415C809260026275B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF27DC315C809260026275B /* Foundation.framework */; };
+		DAF27DC615C809260026275B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF27DC515C809260026275B /* CoreGraphics.framework */; };
+		DAF27DCC15C809260026275B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAF27DCA15C809260026275B /* InfoPlist.strings */; };
+		DAF27DCE15C809260026275B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF27DCD15C809260026275B /* main.m */; };
+		DAF27DD215C809260026275B /* IC_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF27DD115C809260026275B /* IC_AppDelegate.m */; };
+		DAF27DD515C809260026275B /* IC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF27DD415C809260026275B /* IC_ViewController.m */; };
+		DAF27DD815C809270026275B /* IC_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF27DD615C809270026275B /* IC_ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAF27DBD15C809260026275B /* Intercom2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intercom2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF27DC115C809260026275B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DAF27DC315C809260026275B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAF27DC515C809260026275B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DAF27DC915C809260026275B /* Intercom2-Info.plist */ = {isa = PBXFileReference; path = "Intercom2-Info.plist"; sourceTree = "<group>"; };
+		DAF27DCB15C809260026275B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAF27DCD15C809260026275B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAF27DCF15C809260026275B /* Intercom2-Prefix.pch */ = {isa = PBXFileReference; path = "Intercom2-Prefix.pch"; sourceTree = "<group>"; };
+		DAF27DD015C809260026275B /* IC_AppDelegate.h */ = {isa = PBXFileReference; path = IC_AppDelegate.h; sourceTree = "<group>"; };
+		DAF27DD115C809260026275B /* IC_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IC_AppDelegate.m; sourceTree = "<group>"; };
+		DAF27DD315C809260026275B /* IC_ViewController.h */ = {isa = PBXFileReference; path = IC_ViewController.h; sourceTree = "<group>"; };
+		DAF27DD415C809260026275B /* IC_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IC_ViewController.m; sourceTree = "<group>"; };
+		DAF27DD715C809270026275B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IC_ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAF27DBA15C809260026275B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF27DC215C809260026275B /* UIKit.framework in Frameworks */,
+				DAF27DC415C809260026275B /* Foundation.framework in Frameworks */,
+				DAF27DC615C809260026275B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAF27DB215C809240026275B = {
+			isa = PBXGroup;
+			children = (
+				DAF27DC715C809260026275B /* Intercom2 */,
+				DAF27DC015C809260026275B /* Frameworks */,
+				DAF27DBE15C809260026275B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAF27DBE15C809260026275B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAF27DBD15C809260026275B /* Intercom2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAF27DC015C809260026275B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAF27DC115C809260026275B /* UIKit.framework */,
+				DAF27DC315C809260026275B /* Foundation.framework */,
+				DAF27DC515C809260026275B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAF27DC715C809260026275B /* Intercom2 */ = {
+			isa = PBXGroup;
+			children = (
+				DAF27DD015C809260026275B /* IC_AppDelegate.h */,
+				DAF27DD115C809260026275B /* IC_AppDelegate.m */,
+				DAF27DD315C809260026275B /* IC_ViewController.h */,
+				DAF27DD415C809260026275B /* IC_ViewController.m */,
+				DAF27DD615C809270026275B /* IC_ViewController.xib */,
+				DAF27DC815C809260026275B /* Supporting Files */,
+			);
+			path = Intercom2;
+			sourceTree = "<group>";
+		};
+		DAF27DC815C809260026275B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAF27DC915C809260026275B /* Intercom2-Info.plist */,
+				DAF27DCA15C809260026275B /* InfoPlist.strings */,
+				DAF27DCD15C809260026275B /* main.m */,
+				DAF27DCF15C809260026275B /* Intercom2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAF27DBC15C809260026275B /* Intercom2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF27DDB15C809270026275B /* Build configuration list for PBXNativeTarget "Intercom2" */;
+			buildPhases = (
+				DAF27DB915C809260026275B /* Sources */,
+				DAF27DBA15C809260026275B /* Frameworks */,
+				DAF27DBB15C809260026275B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Intercom2;
+			productName = Intercom2;
+			productReference = DAF27DBD15C809260026275B /* Intercom2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAF27DB415C809250026275B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IC_;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = DAF27DB715C809250026275B /* Build configuration list for PBXProject "Intercom2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAF27DB215C809240026275B;
+			productRefGroup = DAF27DBE15C809260026275B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAF27DBC15C809260026275B /* Intercom2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAF27DBB15C809260026275B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF27DCC15C809260026275B /* InfoPlist.strings in Resources */,
+				DAF27DD815C809270026275B /* IC_ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAF27DB915C809260026275B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF27DCE15C809260026275B /* main.m in Sources */,
+				DAF27DD215C809260026275B /* IC_AppDelegate.m in Sources */,
+				DAF27DD515C809260026275B /* IC_ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAF27DCA15C809260026275B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF27DCB15C809260026275B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DAF27DD615C809270026275B /* IC_ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF27DD715C809270026275B /* en */,
+			);
+			name = IC_ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAF27DD915C809270026275B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAF27DDA15C809270026275B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAF27DDC15C809270026275B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Intercom2/Intercom2-Prefix.pch";
+				INFOPLIST_FILE = "Intercom2/Intercom2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAF27DDD15C809270026275B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Intercom2/Intercom2-Prefix.pch";
+				INFOPLIST_FILE = "Intercom2/Intercom2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAF27DB715C809250026275B /* Build configuration list for PBXProject "Intercom2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF27DD915C809270026275B /* Debug */,
+				DAF27DDA15C809270026275B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF27DDB15C809270026275B /* Build configuration list for PBXNativeTarget "Intercom2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF27DDC15C809270026275B /* Debug */,
+				DAF27DDD15C809270026275B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAF27DB415C809250026275B /* Project object */;
+}
