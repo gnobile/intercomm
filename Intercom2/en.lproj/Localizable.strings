@@ -1,0 +1,36 @@
+/* 
+ Localizable.strings
+ Intercom
+ 
+ Created by Giorgio Nobile on 19/05/12.
+ Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+ */
+
+//Settings
+
+"sTitolo" = "Settings";
+"aVolume" = "Auto";
+"aCosa" = "Volume";
+
+//Main
+
+"mConnect" = "Connected";
+"mDisconnect" = "Disconnected";
+
+//LocManager Error
+
+"errkey" = "Warn";
+"denykey" = "User has denied to use current Location ";
+
+//Audio
+
+"beep" = "beep_en";
+
+//Rate
+
+"rate_body" = "If you like Intercomm we'll be glad to read your review. It won't take more than a minute. Thanks for support our work";
+"rate_cancel" = "No";
+"rate_title" = "Rating for Intercomm";
+"rate_button" = "Rate now";
+"rate_later" = "Rate later";
+

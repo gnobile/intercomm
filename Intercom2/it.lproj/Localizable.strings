@@ -1,0 +1,34 @@
+/* 
+ Localizable.strings
+ Intercom
+ 
+ Created by Giorgio Nobile on 19/05/12.
+ Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+ */
+
+//Settings
+
+"sTitolo" = "Impostazioni";
+"aVolume" = "Automatico";
+"aCosa" = "Volume";
+
+//Main
+
+"mConnect" = "Connesso";
+"mDisconnect" = "Disconnesso";
+
+//LocManager Error
+
+"errkey" = "Info";
+"denykey" = "Richiesta di localizzazione cancellata dall'utente";
+
+//Audio
+
+"beep" = "beep_it";
+
+//rate
+"rate_body" = "Se ti e' piaciuto usare Intercomm mi farebbe piacere leggere una tua recensione, non ti portera' via più di una manciata di secondi. Grazie per il supporto al mio lavoro";
+"rate_cancel" = "No Grazie";
+"rate_title" = "Recensisci Intercomm";
+"rate_button" = "Vota ora";
+"rate_later" = "Vota più tardi";
