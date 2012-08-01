@@ -10,10 +10,18 @@
 
 @class IC_ViewController;
 
-@interface IC_AppDelegate : UIResponder <UIApplicationDelegate>
+@interface IC_AppDelegate : UIResponder <UIApplicationDelegate> {
+    UIImageView *splashView;
+        
+}
+
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) IC_ViewController *viewController;
+@property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
+
++ (IC_ViewController *)get;
+
 
 @end
