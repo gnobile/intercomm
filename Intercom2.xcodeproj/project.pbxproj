@@ -15,6 +15,41 @@
 		DAF27DD215C809260026275B /* IC_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF27DD115C809260026275B /* IC_AppDelegate.m */; };
 		DAF27DD515C809260026275B /* IC_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF27DD415C809260026275B /* IC_ViewController.m */; };
 		DAF27DD815C809270026275B /* IC_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF27DD615C809270026275B /* IC_ViewController.xib */; };
+		DAF27DFF15C80A110026275B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF27DFE15C80A110026275B /* AVFoundation.framework */; };
+		DAF27E0115C80A2F0026275B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF27E0015C80A2F0026275B /* CoreLocation.framework */; };
+		DAF27E0315C80A330026275B /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF27E0215C80A330026275B /* GameKit.framework */; };
+		DAF27E0915C80CB70026275B /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF27E0715C80CB70026275B /* SettingsViewController.m */; };
+		DAF27E0A15C80CB70026275B /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E0815C80CB70026275B /* SettingsViewController.xib */; };
+		DAF27E1F15C8103E0026275B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E2115C8103E0026275B /* Localizable.strings */; };
+		DAF27E2715C815460026275B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF27E2615C815460026275B /* SystemConfiguration.framework */; };
+		DAF27E2915C8154B0026275B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF27E2815C8154B0026275B /* CFNetwork.framework */; };
+		DAF27E2A15C818590026275B /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF27E0515C80B530026275B /* Appirater.m */; };
+		DAF27E4515C8194A0026275B /* appbg.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E2B15C8194A0026275B /* appbg.png */; };
+		DAF27E4615C8194A0026275B /* appbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E2C15C8194A0026275B /* appbg@2x.png */; };
+		DAF27E4715C8194A0026275B /* beep_de.wav in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E2D15C8194A0026275B /* beep_de.wav */; };
+		DAF27E4815C8194A0026275B /* beep_en.wav in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E2E15C8194A0026275B /* beep_en.wav */; };
+		DAF27E4915C8194A0026275B /* beep_es.wav in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E2F15C8194A0026275B /* beep_es.wav */; };
+		DAF27E4A15C8194A0026275B /* beep_fr.wav in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3015C8194A0026275B /* beep_fr.wav */; };
+		DAF27E4B15C8194A0026275B /* beep_it.wav in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3115C8194A0026275B /* beep_it.wav */; };
+		DAF27E4C15C8194A0026275B /* buttonoff.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3215C8194A0026275B /* buttonoff.png */; };
+		DAF27E4D15C8194A0026275B /* buttonoff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3315C8194A0026275B /* buttonoff@2x.png */; };
+		DAF27E4E15C8194A0026275B /* buttonon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3415C8194A0026275B /* buttonon.png */; };
+		DAF27E4F15C8194A0026275B /* buttonon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3515C8194A0026275B /* buttonon@2x.png */; };
+		DAF27E5015C8194A0026275B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3615C8194A0026275B /* Default.png */; };
+		DAF27E5115C8194A0026275B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3715C8194A0026275B /* Default@2x.png */; };
+		DAF27E5215C8194A0026275B /* Digitald.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3815C8194A0026275B /* Digitald.ttf */; };
+		DAF27E5315C8194A0026275B /* greenoff.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3915C8194A0026275B /* greenoff.png */; };
+		DAF27E5415C8194A0026275B /* greenoff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3A15C8194A0026275B /* greenoff@2x.png */; };
+		DAF27E5515C8194A0026275B /* greenon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3B15C8194A0026275B /* greenon.png */; };
+		DAF27E5615C8194A0026275B /* greenon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3C15C8194A0026275B /* greenon@2x.png */; };
+		DAF27E5715C8194A0026275B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3D15C8194A0026275B /* Icon.png */; };
+		DAF27E5815C8194A0026275B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3E15C8194A0026275B /* Icon@2x.png */; };
+		DAF27E5915C8194A0026275B /* redoff.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E3F15C8194A0026275B /* redoff.png */; };
+		DAF27E5A15C8194A0026275B /* redoff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E4015C8194A0026275B /* redoff@2x.png */; };
+		DAF27E5B15C8194A0026275B /* redon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E4115C8194A0026275B /* redon.png */; };
+		DAF27E5C15C8194A0026275B /* redon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E4215C8194A0026275B /* redon@2x.png */; };
+		DAF27E5D15C8194A0026275B /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E4315C8194A0026275B /* settings.png */; };
+		DAF27E5E15C8194A0026275B /* settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF27E4415C8194A0026275B /* settings@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +57,56 @@
 		DAF27DC115C809260026275B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DAF27DC315C809260026275B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DAF27DC515C809260026275B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DAF27DC915C809260026275B /* Intercom2-Info.plist */ = {isa = PBXFileReference; path = "Intercom2-Info.plist"; sourceTree = "<group>"; };
+		DAF27DC915C809260026275B /* Intercom2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Intercom2-Info.plist"; sourceTree = "<group>"; };
 		DAF27DCB15C809260026275B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DAF27DCD15C809260026275B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DAF27DCF15C809260026275B /* Intercom2-Prefix.pch */ = {isa = PBXFileReference; path = "Intercom2-Prefix.pch"; sourceTree = "<group>"; };
-		DAF27DD015C809260026275B /* IC_AppDelegate.h */ = {isa = PBXFileReference; path = IC_AppDelegate.h; sourceTree = "<group>"; };
+		DAF27DCF15C809260026275B /* Intercom2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Intercom2-Prefix.pch"; sourceTree = "<group>"; };
+		DAF27DD015C809260026275B /* IC_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IC_AppDelegate.h; sourceTree = "<group>"; };
 		DAF27DD115C809260026275B /* IC_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IC_AppDelegate.m; sourceTree = "<group>"; };
-		DAF27DD315C809260026275B /* IC_ViewController.h */ = {isa = PBXFileReference; path = IC_ViewController.h; sourceTree = "<group>"; };
+		DAF27DD315C809260026275B /* IC_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IC_ViewController.h; sourceTree = "<group>"; };
 		DAF27DD415C809260026275B /* IC_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IC_ViewController.m; sourceTree = "<group>"; };
 		DAF27DD715C809270026275B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IC_ViewController.xib; sourceTree = "<group>"; };
+		DAF27DFE15C80A110026275B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DAF27E0015C80A2F0026275B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DAF27E0215C80A330026275B /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		DAF27E0415C80B530026275B /* Appirater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		DAF27E0515C80B530026275B /* Appirater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
+		DAF27E0615C80CB70026275B /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		DAF27E0715C80CB70026275B /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		DAF27E0815C80CB70026275B /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		DAF27E2015C8103E0026275B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAF27E2215C810490026275B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAF27E2315C8104B0026275B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAF27E2415C8104E0026275B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAF27E2515C810500026275B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DAF27E2615C815460026275B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DAF27E2815C8154B0026275B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DAF27E2B15C8194A0026275B /* appbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appbg.png; sourceTree = "<group>"; };
+		DAF27E2C15C8194A0026275B /* appbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appbg@2x.png"; sourceTree = "<group>"; };
+		DAF27E2D15C8194A0026275B /* beep_de.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep_de.wav; sourceTree = "<group>"; };
+		DAF27E2E15C8194A0026275B /* beep_en.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep_en.wav; sourceTree = "<group>"; };
+		DAF27E2F15C8194A0026275B /* beep_es.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep_es.wav; sourceTree = "<group>"; };
+		DAF27E3015C8194A0026275B /* beep_fr.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep_fr.wav; sourceTree = "<group>"; };
+		DAF27E3115C8194A0026275B /* beep_it.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep_it.wav; sourceTree = "<group>"; };
+		DAF27E3215C8194A0026275B /* buttonoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonoff.png; sourceTree = "<group>"; };
+		DAF27E3315C8194A0026275B /* buttonoff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonoff@2x.png"; sourceTree = "<group>"; };
+		DAF27E3415C8194A0026275B /* buttonon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonon.png; sourceTree = "<group>"; };
+		DAF27E3515C8194A0026275B /* buttonon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonon@2x.png"; sourceTree = "<group>"; };
+		DAF27E3615C8194A0026275B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DAF27E3715C8194A0026275B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DAF27E3815C8194A0026275B /* Digitald.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Digitald.ttf; sourceTree = "<group>"; };
+		DAF27E3915C8194A0026275B /* greenoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenoff.png; sourceTree = "<group>"; };
+		DAF27E3A15C8194A0026275B /* greenoff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenoff@2x.png"; sourceTree = "<group>"; };
+		DAF27E3B15C8194A0026275B /* greenon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenon.png; sourceTree = "<group>"; };
+		DAF27E3C15C8194A0026275B /* greenon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greenon@2x.png"; sourceTree = "<group>"; };
+		DAF27E3D15C8194A0026275B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DAF27E3E15C8194A0026275B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DAF27E3F15C8194A0026275B /* redoff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redoff.png; sourceTree = "<group>"; };
+		DAF27E4015C8194A0026275B /* redoff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redoff@2x.png"; sourceTree = "<group>"; };
+		DAF27E4115C8194A0026275B /* redon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redon.png; sourceTree = "<group>"; };
+		DAF27E4215C8194A0026275B /* redon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redon@2x.png"; sourceTree = "<group>"; };
+		DAF27E4315C8194A0026275B /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		DAF27E4415C8194A0026275B /* settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +114,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF27E2915C8154B0026275B /* CFNetwork.framework in Frameworks */,
+				DAF27E2715C815460026275B /* SystemConfiguration.framework in Frameworks */,
+				DAF27E0315C80A330026275B /* GameKit.framework in Frameworks */,
+				DAF27E0115C80A2F0026275B /* CoreLocation.framework in Frameworks */,
+				DAF27DFF15C80A110026275B /* AVFoundation.framework in Frameworks */,
 				DAF27DC215C809260026275B /* UIKit.framework in Frameworks */,
 				DAF27DC415C809260026275B /* Foundation.framework in Frameworks */,
 				DAF27DC615C809260026275B /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +131,7 @@
 		DAF27DB215C809240026275B = {
 			isa = PBXGroup;
 			children = (
+				DAF27DDF15C809660026275B /* Files */,
 				DAF27DC715C809260026275B /* Intercom2 */,
 				DAF27DC015C809260026275B /* Frameworks */,
 				DAF27DBE15C809260026275B /* Products */,
@@ -67,6 +149,11 @@
 		DAF27DC015C809260026275B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAF27E2815C8154B0026275B /* CFNetwork.framework */,
+				DAF27E2615C815460026275B /* SystemConfiguration.framework */,
+				DAF27E0215C80A330026275B /* GameKit.framework */,
+				DAF27E0015C80A2F0026275B /* CoreLocation.framework */,
+				DAF27DFE15C80A110026275B /* AVFoundation.framework */,
 				DAF27DC115C809260026275B /* UIKit.framework */,
 				DAF27DC315C809260026275B /* Foundation.framework */,
 				DAF27DC515C809260026275B /* CoreGraphics.framework */,
@@ -77,11 +164,16 @@
 		DAF27DC715C809260026275B /* Intercom2 */ = {
 			isa = PBXGroup;
 			children = (
+				DAF27E0415C80B530026275B /* Appirater.h */,
+				DAF27E0515C80B530026275B /* Appirater.m */,
 				DAF27DD015C809260026275B /* IC_AppDelegate.h */,
 				DAF27DD115C809260026275B /* IC_AppDelegate.m */,
 				DAF27DD315C809260026275B /* IC_ViewController.h */,
 				DAF27DD415C809260026275B /* IC_ViewController.m */,
+				DAF27E0615C80CB70026275B /* SettingsViewController.h */,
+				DAF27E0715C80CB70026275B /* SettingsViewController.m */,
 				DAF27DD615C809270026275B /* IC_ViewController.xib */,
+				DAF27E0815C80CB70026275B /* SettingsViewController.xib */,
 				DAF27DC815C809260026275B /* Supporting Files */,
 			);
 			path = Intercom2;
@@ -94,8 +186,42 @@
 				DAF27DCA15C809260026275B /* InfoPlist.strings */,
 				DAF27DCD15C809260026275B /* main.m */,
 				DAF27DCF15C809260026275B /* Intercom2-Prefix.pch */,
+				DAF27E2115C8103E0026275B /* Localizable.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAF27DDF15C809660026275B /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAF27E2B15C8194A0026275B /* appbg.png */,
+				DAF27E2C15C8194A0026275B /* appbg@2x.png */,
+				DAF27E2D15C8194A0026275B /* beep_de.wav */,
+				DAF27E2E15C8194A0026275B /* beep_en.wav */,
+				DAF27E2F15C8194A0026275B /* beep_es.wav */,
+				DAF27E3015C8194A0026275B /* beep_fr.wav */,
+				DAF27E3115C8194A0026275B /* beep_it.wav */,
+				DAF27E3215C8194A0026275B /* buttonoff.png */,
+				DAF27E3315C8194A0026275B /* buttonoff@2x.png */,
+				DAF27E3415C8194A0026275B /* buttonon.png */,
+				DAF27E3515C8194A0026275B /* buttonon@2x.png */,
+				DAF27E3615C8194A0026275B /* Default.png */,
+				DAF27E3715C8194A0026275B /* Default@2x.png */,
+				DAF27E3815C8194A0026275B /* Digitald.ttf */,
+				DAF27E3915C8194A0026275B /* greenoff.png */,
+				DAF27E3A15C8194A0026275B /* greenoff@2x.png */,
+				DAF27E3B15C8194A0026275B /* greenon.png */,
+				DAF27E3C15C8194A0026275B /* greenon@2x.png */,
+				DAF27E3D15C8194A0026275B /* Icon.png */,
+				DAF27E3E15C8194A0026275B /* Icon@2x.png */,
+				DAF27E3F15C8194A0026275B /* redoff.png */,
+				DAF27E4015C8194A0026275B /* redoff@2x.png */,
+				DAF27E4115C8194A0026275B /* redon.png */,
+				DAF27E4215C8194A0026275B /* redon@2x.png */,
+				DAF27E4315C8194A0026275B /* settings.png */,
+				DAF27E4415C8194A0026275B /* settings@2x.png */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +259,10 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				it,
+				es,
+				de,
+				fr,
 			);
 			mainGroup = DAF27DB215C809240026275B;
 			productRefGroup = DAF27DBE15C809260026275B /* Products */;
@@ -151,6 +281,34 @@
 			files = (
 				DAF27DCC15C809260026275B /* InfoPlist.strings in Resources */,
 				DAF27DD815C809270026275B /* IC_ViewController.xib in Resources */,
+				DAF27E0A15C80CB70026275B /* SettingsViewController.xib in Resources */,
+				DAF27E1F15C8103E0026275B /* Localizable.strings in Resources */,
+				DAF27E4515C8194A0026275B /* appbg.png in Resources */,
+				DAF27E4615C8194A0026275B /* appbg@2x.png in Resources */,
+				DAF27E4715C8194A0026275B /* beep_de.wav in Resources */,
+				DAF27E4815C8194A0026275B /* beep_en.wav in Resources */,
+				DAF27E4915C8194A0026275B /* beep_es.wav in Resources */,
+				DAF27E4A15C8194A0026275B /* beep_fr.wav in Resources */,
+				DAF27E4B15C8194A0026275B /* beep_it.wav in Resources */,
+				DAF27E4C15C8194A0026275B /* buttonoff.png in Resources */,
+				DAF27E4D15C8194A0026275B /* buttonoff@2x.png in Resources */,
+				DAF27E4E15C8194A0026275B /* buttonon.png in Resources */,
+				DAF27E4F15C8194A0026275B /* buttonon@2x.png in Resources */,
+				DAF27E5015C8194A0026275B /* Default.png in Resources */,
+				DAF27E5115C8194A0026275B /* Default@2x.png in Resources */,
+				DAF27E5215C8194A0026275B /* Digitald.ttf in Resources */,
+				DAF27E5315C8194A0026275B /* greenoff.png in Resources */,
+				DAF27E5415C8194A0026275B /* greenoff@2x.png in Resources */,
+				DAF27E5515C8194A0026275B /* greenon.png in Resources */,
+				DAF27E5615C8194A0026275B /* greenon@2x.png in Resources */,
+				DAF27E5715C8194A0026275B /* Icon.png in Resources */,
+				DAF27E5815C8194A0026275B /* Icon@2x.png in Resources */,
+				DAF27E5915C8194A0026275B /* redoff.png in Resources */,
+				DAF27E5A15C8194A0026275B /* redoff@2x.png in Resources */,
+				DAF27E5B15C8194A0026275B /* redon.png in Resources */,
+				DAF27E5C15C8194A0026275B /* redon@2x.png in Resources */,
+				DAF27E5D15C8194A0026275B /* settings.png in Resources */,
+				DAF27E5E15C8194A0026275B /* settings@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +321,9 @@
 			files = (
 				DAF27DCE15C809260026275B /* main.m in Sources */,
 				DAF27DD215C809260026275B /* IC_AppDelegate.m in Sources */,
+				DAF27E2A15C818590026275B /* Appirater.m in Sources */,
 				DAF27DD515C809260026275B /* IC_ViewController.m in Sources */,
+				DAF27E0915C80CB70026275B /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +346,18 @@
 			name = IC_ViewController.xib;
 			sourceTree = "<group>";
 		};
+		DAF27E2115C8103E0026275B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAF27E2015C8103E0026275B /* en */,
+				DAF27E2215C810490026275B /* it */,
+				DAF27E2315C8104B0026275B /* es */,
+				DAF27E2415C8104E0026275B /* de */,
+				DAF27E2515C810500026275B /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -193,7 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -204,11 +379,12 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -217,15 +393,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -237,7 +417,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Intercom2/Intercom2-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Intercom2/Intercom2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -248,7 +430,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Intercom2/Intercom2-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Intercom2/Intercom2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,6 +457,7 @@
 				DAF27DDD15C809270026275B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
