@@ -89,7 +89,17 @@ bool volumeAuto;
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    NSLog(@"Terminate");
+    
+    NSLog(@"Entrato in applicationWillTerminate");
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults]; 
+	volumeAuto = [defaults boolForKey:kSpeedAuto];
+    
+    if (volumeAuto == YES) {
+        [[IC_ViewController shared].locManager stopUpdatingLocation];
+        [[IC_ViewController shared].locManager stopMonitoringSignificantLocationChanges];
+        NSLog(@"Ho stoppato i servizi di localizzazione in quanto app terminata");
+    }
+
 
 }
 
