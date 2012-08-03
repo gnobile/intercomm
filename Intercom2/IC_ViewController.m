@@ -21,8 +21,6 @@ NSString *recorderFilePath;
 BOOL autoVolume;
 AVAudioPlayer *audioPlayer;
 NSString *velocita;
-int sStatus = 0;
-NSTimer *myTimer;
 
 static IC_ViewController *shAccess = nil;
 
@@ -38,8 +36,6 @@ static IC_ViewController *shAccess = nil;
 {
     [super dealloc];
     if (currentSession) [currentSession release];
-    [myTimer invalidate];
-    [myTimer release];
     [locManager release];
     [velocita release];
     [recorderFilePath release];
@@ -55,21 +51,13 @@ static IC_ViewController *shAccess = nil;
     currentSession = nil;
     recorderFilePath = nil;
     audioPlayer = nil;
-    myTimer = nil;
     velocita = nil;
     picker = nil;
     
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-}
-
-
 - (void)viewDidLoad
-{
-    
+{    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(willResume:)
                                                  name:GKSessionErrorDomain
@@ -83,9 +71,9 @@ static IC_ViewController *shAccess = nil;
     [connected setImage:[UIImage imageNamed:@"greenoff"]];
     [disconnected setImage:[UIImage imageNamed:@"redon"]];
     [btnConnect setImage:[UIImage imageNamed:@"buttonoff"] forState:UIControlStateNormal];
-    [btnDisconnect setImage:[UIImage imageNamed:@"buttonOn"] forState:UIControlStateNormal];
-    [btnConnect setHidden:FALSE];
-    [btnDisconnect setHidden:TRUE];
+    [btnDisconnect setImage:[UIImage imageNamed:@"buttonon"] forState:UIControlStateNormal];
+    [btnConnect setHidden:NO];
+    [btnDisconnect setHidden:YES];
     [super viewDidLoad];
     
     
@@ -109,7 +97,6 @@ static IC_ViewController *shAccess = nil;
     } else if (autoVolume == YES && (self.locManager) ){
         NSLog(@"Attivo localizzazione speed 2");
         locManager.delegate = nil;
-        //[self.locManager stopUpdatingLocation];
         [locManager stopUpdatingLocation];
         self.locManager = nil;
         [locManager release];
@@ -162,10 +149,10 @@ static IC_ViewController *shAccess = nil;
     picker.delegate = nil;
     [picker autorelease];
     
-    [btnConnect setHidden:NO];
-    [btnDisconnect setHidden:YES];
     [connected setImage:[UIImage imageNamed:@"greenoff"]];
     [disconnected setImage:[UIImage imageNamed:@"redon"]];
+    [btnConnect setHidden:NO];
+    [btnDisconnect setHidden:YES];
     UIFont *textFont = [UIFont fontWithName:@"DigitaldreamSkewNarrow" size:31.0f];
     UIColor *theRedColor = [UIColor colorWithRed:170.0f/255.0f green:24.0f/255.0f blue:24.0f/255.0f alpha:1.0];
     text.text=[NSString stringWithFormat:@"%@", NSLocalizedString(@"mDisconnect", @"")];
@@ -195,6 +182,8 @@ static IC_ViewController *shAccess = nil;
 - (void)session:(GKSession *)session 
            peer:(NSString *)peerID 
  didChangeState:(GKPeerConnectionState)state {
+    //da rivedere
+    //
     
     switch (state)
     {
@@ -204,14 +193,16 @@ static IC_ViewController *shAccess = nil;
             
 		case GKPeerStateAvailable:
         {
-			[session connectToPeer:peerID withTimeout:0];
+			[currentSession connectToPeer:peerID withTimeout:0];
 			break;
         }
         case GKPeerStateConnected:
         {            
-            //audio per connessione: manca da registrarli e localizzarli
+
+            NSString *audioLocal = [NSString stringWithFormat:@"%@", NSLocalizedString(@"beep", @"")];
+            
             NSString *soundFilePath = [[NSBundle mainBundle] 
-                                       pathForResource:@"beep" ofType:@"wav"];
+                                       pathForResource:audioLocal ofType:@"wav"];
             
             NSURL *fileURL = [[NSURL alloc] 
                               initFileURLWithPath: soundFilePath];
@@ -223,63 +214,63 @@ static IC_ViewController *shAccess = nil;
             [fileURL release];
             [audioPlayer play];
             //Verificare se spacca
-            [audioPlayer release];
+            //[audioPlayer release];
             
             NSError *error;
             AVAudioSession *audioSession = 
             [AVAudioSession sharedInstance];
             
+            [audioSession setMode: AVAudioSessionModeVoiceChat error:NULL];
+
+            
             if (![audioSession  
                   setCategory:AVAudioSessionCategoryPlayAndRecord 
                   error:&error]) {
-                NSLog(@"Error setting the AVAudioSessionCategoryPlayAndRecord category: %@", 
+                NSLog(@"Errore istanziando la categoria AVAudioSessionCategoryPlayAndRecord: %@", 
                       [error localizedDescription]);
             }
             
             if (![audioSession setActive: YES error: &error]) {
-                NSLog(@"Error activating audioSession: %@", 
+                NSLog(@"Errore attivando AudioSession: %@", 
                       [error description]);
             }
             
             [GKVoiceChatService defaultVoiceChatService].client = self;
             
-            //---initiating the voice chat---
+            //---inizializzo voice chat
             if (![[GKVoiceChatService defaultVoiceChatService] 
                   startVoiceChatWithParticipantID:peerID error:&error]) {
                 NSLog(@"Error starting startVoiceChatWithParticipantID: %@", 
                       [error userInfo]);
             }
-            [btnConnect setHidden:YES];
-            [btnDisconnect setHidden:NO];
+            
             [connected setImage:[UIImage imageNamed:@"greenon"]];
             [disconnected setImage:[UIImage imageNamed:@"redoff"]];
+            [btnConnect setHidden:YES];
+            [btnDisconnect setHidden:NO];
+            
             UIFont *textFont = [UIFont fontWithName:@"DigitaldreamSkewNarrow" size:31.0f];
             UIColor *theGreenColor = [UIColor colorWithRed:41.0f/255.0f green:170.0f/255.0f blue:24.0f/255.0f alpha:1.0];
             text.text=[NSString stringWithFormat:@"%@", NSLocalizedString(@"mConnect", @"")];
             text.font = textFont;
             text.textColor = theGreenColor;
             NSLog(@"Connesso in GKStateConnected");
-            
-            if ([myTimer isValid]) {
-                [myTimer invalidate];
-            }
-            
-            
+                        
         } break;
             
         case GKPeerStateDisconnected:
         {
             [[GKVoiceChatService defaultVoiceChatService] 
              stopVoiceChatWithParticipantID:peerID];
-            currentSession.delegate = nil;
-            //[self.currentSession release];
+            self.currentSession.delegate = nil;
             [currentSession setDataReceiveHandler:nil withContext:nil];
-            [currentSession release];
-                        
-            [btnConnect setHidden:NO];
-            [btnDisconnect setHidden:YES];
+            [self.currentSession release];
+            currentSession = nil;
+            
             [connected setImage:[UIImage imageNamed:@"greenoff"]];
             [disconnected setImage:[UIImage imageNamed:@"redon"]];
+            [btnConnect setHidden:NO];
+            [btnDisconnect setHidden:YES];
             UIFont *textFont = [UIFont fontWithName:@"DigitaldreamSkewNarrow" size:31.0f];
             UIColor *theRedColor = [UIColor colorWithRed:170.0f/255.0f green:24.0f/255.0f blue:24.0f/255.0f alpha:1.0];
             text.text=[NSString stringWithFormat:@"%@", NSLocalizedString(@"mDisconnect", @"")];
@@ -331,7 +322,7 @@ static IC_ViewController *shAccess = nil;
     
     [self.currentSession disconnectFromAllPeers];
     //[self.currentSession release];
-    [currentSession release];
+    [self.currentSession release];
     currentSession = nil;
     [connected setImage:[UIImage imageNamed:@"greenoff"]];
     [disconnected setImage:[UIImage imageNamed:@"redon"]];
