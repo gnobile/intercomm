@@ -312,6 +312,15 @@ static IC_ViewController *shAccess = nil;
 
 -(IBAction) disconnectedToConnected:(id) sender{
     
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) {
+        if([[AVAudioSession sharedInstance] respondsToSelector:@selector(requestRecordPermission:)])
+        {
+            [[AVAudioSession sharedInstance] requestRecordPermission:^(BOOL granted) {
+                NSLog(@"permission : %d", granted);
+            }];
+        }
+    }
+
     picker = [[GKPeerPickerController alloc] init];
     picker.delegate = self;
     picker.connectionTypesMask = GKPeerPickerConnectionTypeNearby;  
